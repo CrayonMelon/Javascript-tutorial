@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JAVASCRIPT CONDITIONAL STATMENTS</title>
+<link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body><div class="container"><h1 id="javascript-conditional-statments">JAVASCRIPT CONDITIONAL STATMENTS</h1>
+
+<style>
+body {
+    background-image: url("imgs/clouds.gif");
+
+}
+
+</style>
+
+<h3 id="if-statements">If Statements</h3>
+
+<p><strong>If statements</strong> look hard but in reality they are quite simple.</p>
+
+<ul>
+<li>There are used to check <em>if</em> a condition is true or not. </li>
+<li>If it is true then it performs what is in the <em>curly brackets</em>. </li>
+<li>If not true it does nothing. </li>
+</ul>
+
+<pre class="prettyprint"><code class="language-sh hljs cs"><span class="hljs-keyword">var</span> myAge = <span class="hljs-number">18</span>; 
+<span class="hljs-keyword">var</span> obamaAge = <span class="hljs-number">54</span>; 
+
+<span class="hljs-keyword">if</span>(obamaAge &gt; myAge) 
+{ 
+alert(<span class="hljs-string">"Obama is older than me"</span>) 
+}</code></pre>
+
+<p>See, easy!</p>
+
+<img src="imgs/If statements.png" alt="NOICE">
+
+<style>
+img{
+	border-radius: 25px;
+    background: white;
+} 
+</style>
+<p></p>
+<p>But what if I was older than Obama?…transition…(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</p>
+
+<hr>
+
+
+
+<h3 id="else-statements">Else Statements</h3>
+
+
+
+<pre class="prettyprint"><code class="language-sh hljs cs"><span class="hljs-keyword">var</span> myAge = <span class="hljs-number">83</span>; 
+<span class="hljs-keyword">var</span> obamaAge = <span class="hljs-number">54</span>; 
+
+<span class="hljs-keyword">if</span>(obamaAge &gt; myAge) 
+
+{ alert(<span class="hljs-string">"Obama is older than me!"</span>) 
+} 
+<span class="hljs-keyword">else</span> 
+{ alert(<span class="hljs-string">"I am older than Obama!"</span>) }     </code></pre>
+
+<p>If the  the first statement in the brackets is FALSE, then it will do </p>
+
+<p>d</p>
+
+<p>Now to branch the last two lessons together.</p>
+
+<hr>
+
+
+
+<h3 id="confirm-box">Confirm Box</h3>
+
+<p>A confirm box asks the user to confirm something.</p>
+
+
+
+<pre class="prettyprint"><code class="language-sh hljs applescript">var <span class="hljs-constant">result</span> = confirm(<span class="hljs-string">"Is Ciaran amazing?"</span>) 
+
+<span class="hljs-keyword">if</span>(<span class="hljs-constant">result</span>==<span class="hljs-constant">true</span>)
+{   
+alert(<span class="hljs-string">"You are dam right"</span>);
+
+} 
+
+<span class="hljs-keyword">else</span>{   
+alert(<span class="hljs-string">"YOU LIER"</span>);
+
+ }</code></pre>
+
+<ul>
+<li>If the user presses OK (which they should) it will do the code in the first curly brackets</li>
+<li>If the user does not it will the second bracket.  <br>
+<hr></li>
+</ul>
+
+
+
+<h2 id="challenges">Challenges</h2>
+
+<p>With your new acquired knowledge I would like you to complete this task:</p>
+
+<blockquote>
+  <p>Create something using javascript that can calculate to see if I am older than Obama or not.</p>
+</blockquote>
+
+<p>HINTS:  <br>
+- you will need a prompt Box to get the age of the user. <br>
+- You will need and if statement to do the calculations.</p>
+
+<button class="rightButton" onclick="clickFunction()">Part Five - MORE CONDITIONAL STATMENTS</button>
+
+<style type="text/css">
+button{
+	background-color: #cc99ff;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+} 
+</style>
+
+
+<script>
+function clickFunction() {
+			window.location.href = "MORE CONDITIONAL STATMENTS.html";
+		}
+	
+</script>
+
+</div></body>
+</html>
+

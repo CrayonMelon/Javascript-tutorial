@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JAVASCRIPT TUTORIAL</title>
+<link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body><div class="container"><h1 id="variables">Variables</h1>
+
+<style>
+body {
+    background-image: url("imgs/clouds.gif");
+
+}
+img{
+	border-radius: 25px;
+    background: white;
+} 
+
+
+</style>
+<p>What we will first learn is about variables <br>
+- They are incredibly important in javascript.  <br>
+- Simply, what they do is hold a <em>value</em> you give them.</p>
+
+
+
+<h4 id="how-to-creat-a-varible">How to creat a varible</h4>
+
+
+
+<pre class="prettyprint"><code class="language-sh hljs lasso"><span class="hljs-built_in">Var</span> myName <span class="hljs-subst">=</span> <span class="hljs-string">"Ciaran"</span>;
+
+console<span class="hljs-built_in">.</span><span class="hljs-keyword">log</span>(myName);</code></pre>
+
+<ul>
+<li>You type <code>Var</code> followed by the name of your variable (anything!).</li>
+<li>Then you equal what you want it to be. </li>
+<li>Notice that the variable <code>myName</code> in the <code>Console.log</code> does not quatation marks. </li>
+<li>The bit in the quotations are called <strong>Strings</strong>.</li>
+</ul>
+
+<img src="imgs/variable.png" alt="NOICE" >
+
+
+<hr>
+
+<h2 id="numbers-in-variables">Numbers in Variables</h2>
+
+<p>Variables can be used for numbers as well. SO YOU CAN DO MATHS WITH IT.  <br>
+(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</p>
+
+
+
+<h4 id="here-is-an-exciting-example">Here is an exciting example:</h4>
+
+
+
+<pre class="prettyprint"><code class="language-sh hljs coffeescript"><span class="hljs-reserved">var</span> x = <span class="hljs-number">5</span>; 
+<span class="hljs-reserved">var</span> y = <span class="hljs-number">6</span>; 
+<span class="hljs-reserved">var</span> z = x + y; 
+
+<span class="hljs-built_in">console</span>.log(z);</code></pre>
+
+<ul>
+<li>Variables can be added divided and many other maths therms I don’t understand.</li>
+</ul>
+
+
+
+<h4 id="here-is-a-whole-bunch-of-maths-things-you-can-do">Here is a whole bunch of maths things you can do:</h4>
+
+
+
+<pre class="prettyprint"><code class="language-sh hljs lasso"><span class="hljs-built_in">var</span> a <span class="hljs-subst">=</span> <span class="hljs-number">43</span>;
+<span class="hljs-built_in">var</span> z <span class="hljs-subst">=</span> (<span class="hljs-number">5</span> <span class="hljs-subst">+</span> <span class="hljs-number">6</span>) <span class="hljs-subst">*</span> (<span class="hljs-number">64</span> <span class="hljs-subst">/</span> <span class="hljs-number">4</span>) <span class="hljs-subst">-</span> a
+console<span class="hljs-built_in">.</span><span class="hljs-keyword">log</span>(z);
+
+<span class="hljs-comment">// addition 3 + 4 = 7</span>
+<span class="hljs-comment">// Subrtraction 4 - 3 = 1</span>
+<span class="hljs-comment">// Multiplication 4 * 3 = 12</span>
+<span class="hljs-comment">// Division 12 / 4 = 3 </span></code></pre>
+
+
+
+<h4 id="strings-can-be-added-as-well">Strings can be added as well:</h4>
+
+
+
+<pre class="prettyprint"><code class="language-sh hljs lasso"><span class="hljs-built_in">Var</span> myName <span class="hljs-subst">=</span> Ciaran
+console<span class="hljs-built_in">.</span><span class="hljs-keyword">log</span>( myName <span class="hljs-subst">+</span> <span class="hljs-string">"is "</span> <span class="hljs-subst">+</span>  <span class="hljs-string">" Amazing"</span>);</code></pre>
+
+<ul>
+<li>Now that you know a whole bunch about variables I would recommend messing around with them to get a feeling for them.</li>
+</ul>
+
+<hr>
+
+
+
+<h2 id="important-pro-tips-on-variable">Important pro tips On Variable:</h2>
+
+<ul>
+<li>Variables can be changed as many times as you like:</li>
+
+</ul>
+
+
+<pre class="prettyprint"><code class="language-sh hljs applescript">var <span class="hljs-property">name</span> = <span class="hljs-string">"Bob"</span>
+
+console.<span class="hljs-command">log</span>(<span class="hljs-property">name</span>);
+
+var <span class="hljs-property">name</span> = <span class="hljs-string">"Tom"</span>
+
+console.<span class="hljs-command">log</span>(<span class="hljs-property">name</span>);</code></pre>
+
+<p>Try it.</p>
+
+<ul>
+<li><p>Names are <em>very Important</em> in variables and there is some correct ways and incorrect ways of doing it.</p>
+
+<ul><li><p><strong>Don’t do this:</strong></p>
+
+<pre class="prettyprint"><code class="language-sh hljs coffeescript"><span class="hljs-regexp">//</span>Dont put numbers at the beginning <span class="hljs-keyword">of</span> the name.
+<span class="hljs-reserved">var</span> <span class="hljs-number">420</span>boi = <span class="hljs-string">"dank"</span>;
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-number">420</span>boi);
+
+<span class="hljs-regexp">//</span>Dont put spaces <span class="hljs-keyword">in</span> the variables
+<span class="hljs-reserved">var</span> dank memes yo = <span class="hljs-string">"lolololol"</span>
+
+<span class="hljs-built_in">console</span>.log(dank memes yo);
+
+<span class="hljs-regexp">//</span>Dont make it too long <span class="hljs-keyword">and</span> nonsensical
+<span class="hljs-reserved">var</span> boifurgna1223sugrnsdtwotwo = <span class="hljs-string">"wut"</span>;
+
+<span class="hljs-built_in">console</span>.log(boifurgna1223sugrnsdtwotwo);</code></pre></li>
+<li><p><strong>Do these:</strong></p>
+
+<pre class="prettyprint"><code class="language-sh hljs coffeescript"><span class="hljs-regexp">//</span>Keep it short <span class="hljs-keyword">and</span> meaning to the variable
+
+<span class="hljs-reserved">var</span> myName = <span class="hljs-string">"Ciaran"</span>;
+
+<span class="hljs-built_in">console</span>.log(myName);
+
+<span class="hljs-regexp">//</span>Use camelCase <span class="hljs-keyword">in</span> your variables.
+
+<span class="hljs-reserved">var</span> camelCase = <span class="hljs-string">"CAMELS"</span>;
+
+<span class="hljs-built_in">console</span>.log(camelCase);
+
+<span class="hljs-regexp">//</span>Or use _ <span class="hljs-keyword">in</span> your variables.
+
+<span class="hljs-reserved">var</span> my_name = <span class="hljs-string">"Ciaran"</span>;
+
+<span class="hljs-built_in">console</span>.log(my_name);</code></pre></li></ul></li>
+<li><p><strong>camelCase</strong> is a very pretty way of writing code.</p>
+
+<ul><li>The first word starts with a lower case then every word after it starts with a Capital case letter.</li></ul></li>
+</ul>
+
+<hr>
+
+
+<h3 id="challenge-time">CHALLENGE TIME</h3>
+
+<blockquote>
+  <p>What is wrong with this variable:
+    ciaranisAmazing</p>
+</blockquote>
+
+
+<p><strong>HINTS:</strong> <br>
+- The <code>Amazing</code> bit is right<br>
+- Remember what <br>
+- This is very hard so ask if you need help.</p>
+
+
+<button class="rightButton" onclick="clickFunction()">Part Three - Outputs</button>
+
+<style type="text/css">
+button{
+	background-color: #cc99ff;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+} 
+</style>
+
+
+<script>
+function clickFunction() {
+			window.location.href = "OUTPUTS.html";
+		}
+	
+</script>
+
+
+<hr></div></body>
+</html>

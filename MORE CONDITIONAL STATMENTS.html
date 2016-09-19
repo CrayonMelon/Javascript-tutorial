@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JAVASCRIPT CONDITIONAL STATMENTS</title>
+<link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body><div class="container"><h1 id="more-conditions-statements">MORE CONDITIONS STATEMENTS</h1>
+
+<p>To your delight, there is more conditional statements for you to master.</p>
+<style>
+body {
+    background-image: url("imgs/clouds.gif");
+
+}
+
+</style>
+
+
+<h3 id="if-else-statements">if else statements</h3>
+
+<ul>
+<li><p>First we will tackle <code>else if</code> Statements</p></li>
+<li><p><code>else if</code> Statements are a continuation of If Statements.</p></li>
+<li><code>if</code> Statements only check ONE condition.</li>
+<li>But thanks to <code>else if</code> Statements we can check as many as we like!</li>
+</ul>
+
+
+
+<pre class="prettyprint"><code class="language-sh hljs coffeescript"><span class="hljs-reserved">var</span> randomNo = Math.random()
+
+<span class="hljs-keyword">if</span>(randomNo &gt; <span class="hljs-number">0</span> &amp;&amp; randomNo &lt; <span class="hljs-number">.33</span>) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"first"</span>)
+
+}
+<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(randomNo &gt; <span class="hljs-number">.33</span> &amp;&amp; randomNo &lt; <span class="hljs-number">.66</span>) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"second"</span>)
+
+}
+
+<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>( randomNo &gt; <span class="hljs-number">.66</span> &amp;&amp; randomNo &lt; <span class="hljs-number">1</span>) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"third"</span>)
+
+}<span class="hljs-keyword">else</span> {
+    <span class="hljs-built_in">console</span>.log(“NUMBERS DON<span class="hljs-string">'T EXIST”)
+}</span></code></pre>
+
+<p>There’s a lot to take in here so let’s take it step by step.</p>
+
+<ul>
+<li><p>Firstly <code>Math.random()</code> selects a random number between 0 and 1 so for example</p>
+
+<ul><li>.8348762394729 or .2268125684512 or .3 </li></ul></li>
+<li><p>So equaling a variable to this will select a random number between 0 and 1 every time the code is ran.</p></li>
+<li><p>So the <code>else if</code> statement is breaking up the randomNo into thirds. It has a 1 out of 3 chance of selecting any of them.</p></li>
+<li><p>If it isn’t the first condition then check the else if condition if it isn’t that condition then check the next else  condition. It could go on for technically forever. But we just did 3. </p>
+
+<hr></li>
+</ul>
+
+<h3 id="challenge-time">CHALLENGE TIME</h3>
+
+<blockquote>
+  <p>I want you the create a computer dice role. That a random number between one and 6</p>
+</blockquote>
+
+<p><strong>HINTS:</strong> <br>
+- So you will need <code>math.Random()</code> <br>
+- You will need a Else If Statement broken up into 6 parts. <br>
+- This is very hard so ask if you need help.</p>
+
+<hr></div></body>
+</html>
