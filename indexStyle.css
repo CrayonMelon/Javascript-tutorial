@@ -1,0 +1,117 @@
+header {
+    background-color:#ff6666;
+    color:white;
+    text-align:left;
+    padding:5px;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+body {
+ margin-top: 0px;
+ margin-right: 0px;
+ margin-bottom: 0px;
+ margin-left: 0px
+
+}
+
+nav {
+    line-height:30px;
+    background-color:#ff6666;
+    height:30px;
+
+    float:top;
+    padding:2px;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 6px solid #ffcccc;
+    color: #999999;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+}
+
+#page-wrap {
+     width: 1080px;
+     margin: 0 auto;
+}
+#header {
+
+}
+#links {
+    text-align: right;
+}
+section {
+    width:1080px;
+    
+    padding:2px;
+
+    font-family: 'Roboto Mono', monospace;
+
+  
+}
+#article {
+    width:1080px;
+    float:left;
+    padding:10px;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+    margin: 10px; 
+    border-bottom: 6px solid #ff6666;
+    background-color: #ffcccc;
+    border-radius: 25px;
+
+}
+
+.leftButton {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #ff6666;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.rightButton {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #ffcccc;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    margin: 4px 2px;
+    cursor: help;
+    float:right;
+}
+#codeExample {
+    border-left: 3px dotted #e699ff;
+    border-right: 3px dotted #e699ff;
+    background-color: white;
+
+}
+aside {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:600px;
+    float:right;
+    padding:5px;
+
+}
+footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:left;
+    padding:5px;
+}
