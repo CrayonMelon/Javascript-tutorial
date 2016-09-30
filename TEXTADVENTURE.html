@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Things</title>
+<link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body><div class="container"><h1 id="text-adventure-with-alert-stuff">Text Adventure with alert stuff !</h1>
+
+    <style>
+body {
+    background-image: url("imgs/clouds.gif");
+
+}
+
+</style>
+
+<p>Time to take what you have learned and do something productive.</p>
+
+<ul>
+<li>We are going to make a text adventure game.</li>
+<li>And it will have interactive stuff.</li>
+<li>We are going to breakdown this tutorial into <strong>steps</strong>.</li>
+</ul>
+
+<hr>
+
+<h4 id="step-one-getting-the-players-name">STEP ONE - Getting the Players Name</h4>
+
+<pre class="prettyprint"><code class="language-sh hljs cs"><span class="hljs-keyword">var</span> myName = prompt(<span class="hljs-string">"What is your name"</span>);</code></pre>
+
+<ul>
+<li>using a prompt box, remember? <br>
+<ul><li>it takes information from the user.</li></ul></li>
+</ul>
+
+<hr>
+
+<h4 id="step-too-doing-something-with-the-name">STEP TOO - Doing Something with the Name</h4>
+
+
+
+<pre class="prettyprint"><code class="language-sh hljs cs"><span class="hljs-keyword">var</span> ready = confirm(<span class="hljs-string">"Well "</span> + myName  + <span class="hljs-string">" do you wan't to play a game?"</span>);
+
+<span class="hljs-keyword">if</span> (ready === <span class="hljs-keyword">true</span>) {
+    <span class="hljs-comment">//game stuff</span>
+}
+<span class="hljs-keyword">else</span> {
+    alert( myName + <span class="hljs-string">", please leave"</span>);
+}</code></pre>
+
+<ul>
+<li>So we take the <code>myName</code> variable and put it in the <code>prompt</code> box, to add some <em>pizzazz</em>.</li>
+<li>Then if the user presses <strong>OK</strong> then they are ready to play the game.</li>
+<li>If the press <strong>Cancel</strong>, we ask them to politely.</li>
+</ul>
+
+<hr>
+
+<h4 id="step-tree-adding-the-game-bit-if-statement-in-a-if-statement">STEP TREE - Adding the game bit (if statement <strong>IN</strong> a if statement)</h4>
+
+<p>this goes were we marked <code>//game stuff</code> in the previous <strong>step</strong>.</p>
+
+<pre class="prettyprint"><code class="language-sh hljs cs">
+<span class="hljs-keyword">var</span> directionChoice = prompt(<span class="hljs-string">"You are in a dark forest with two paths. Go left or right? - type 'left' or 'right' "</span>)
+
+    <span class="hljs-keyword">if</span> (directionChoice === <span class="hljs-string">"left"</span>) {
+        alert(<span class="hljs-string">"Wooptydo you win"</span>)
+
+    }
+    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(directionChoice === <span class="hljs-string">"right"</span>) {
+        alert(<span class="hljs-string">"oh noos, you lost"</span>)
+    }
+
+    <span class="hljs-keyword">else</span> {
+        alert(<span class="hljs-string">"I told you, type left or right, you lose"</span>)
+
+        alert(<span class="hljs-string">"YOU GET NOTHING"</span>)
+    }</code></pre>
+
+<ul>
+<li>This is an if statement inside an if statement.</li>
+<li>the <code>prompt</code> box asks the user to type “left” or “right”.</li>
+<li>Depending what they type determines the path of the game.</li>
+<li>Just in case they type nothing we have a back up for that as an <code>else</code>.</li>
+</ul>
+
+<hr>
+
+<h4 id="good-job-some-pointers">GOOD JOB - Some pointers</h4>
+
+<ul>
+<li>Great job if it worked, I hope you will put your own story to this format.</li>
+<li>You can make it even more complex by putting more if statements in it.</li>
+</ul>
+
+<p>Here is my game:</p>
+
+<pre class="prettyprint"><code class="language-sh hljs cs"><span class="hljs-keyword">var</span> myName = prompt(<span class="hljs-string">"What is your name"</span>);
+
+<span class="hljs-keyword">var</span> ready = confirm(<span class="hljs-string">"Well "</span> + myName  + <span class="hljs-string">" do you wan't to play a game?"</span>);
+
+<span class="hljs-keyword">if</span> (ready === <span class="hljs-keyword">true</span>) {
+
+    <span class="hljs-keyword">var</span> directionChoice = prompt(<span class="hljs-string">"You are in a dark forest with two paths. One goes left and one goes right. Which one do you choose. [Please type 'left' or 'right' to make your decision]"</span>);
+
+    <span class="hljs-keyword">if</span> (directionChoice === <span class="hljs-string">"left"</span>) {
+        alert(<span class="hljs-string">"You were stopped by wizard who asks you a question"</span>);
+
+        <span class="hljs-keyword">var</span> wizardQuestion = confirm(<span class="hljs-string">"Do you like pineapples? - [press 'OK' if you agree, if not press 'cancel']"</span>)
+
+            <span class="hljs-keyword">if</span> (wizardQuestion === <span class="hljs-keyword">true</span>){
+
+            alert(<span class="hljs-string">"I HATE THEM, AND I HATE YOU "</span> + myName + <span class="hljs-string">" FOR SAYING THAT!"</span>);
+
+            alert(<span class="hljs-string">"The wizard summoned a bear with his magical ways and the bear kills you"</span>);
+
+            alert(<span class="hljs-string">"YOU LOSE!"</span>);
+        }
+
+        <span class="hljs-keyword">else</span> {
+
+            alert(<span class="hljs-string">"Ah me neither, you want a capri-sun?"</span>);
+
+            alert(<span class="hljs-string">"you get a capri-sun from the wizard with sparks a new friendship with your wizard friend"</span>);
+
+            alert(<span class="hljs-string">"YOU WIN!"</span>);
+        }
+
+    }
+    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(directionChoice === <span class="hljs-string">"right"</span>) {
+        alert(<span class="hljs-string">"You get jumped a bear and die."</span>);
+
+        alert(<span class="hljs-string">"YOU LOSE"</span>);
+    }
+
+    <span class="hljs-keyword">else</span> {
+        alert(<span class="hljs-string">"I told you, type left or right, you lose"</span>);
+
+        alert(<span class="hljs-string">"YOU GET NOTHING"</span>);
+    }
+
+}
+<span class="hljs-keyword">else</span> {
+    alert( myName + <span class="hljs-string">", please leave"</span>);
+}</code></pre>
+
+<ul>
+<li>You can copy an paste that in to give it a try, (this one time).</li>
+</ul>
+
+<hr>
+
+<h4 id="challenge-time">CHALLENGE TIME</h4>
+
+<ul>
+<li>Make your own text adventure game, go as far in dept as you want.</li>
+<li>If you make a real good I will give you a cookie.</li>
+</ul></div></body>
+</html>
